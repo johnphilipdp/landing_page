@@ -1,0 +1,97 @@
+@import "variables.scss";
+
+.btn {
+    width: 15%;
+    background: $primaryLight;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: $p-font;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    color: #fff;
+    transition: all .3s ease;
+
+    &:hover{
+        transform: translateY(-2px);
+        background-color: $primaryDark;
+    }
+
+}
+
+.form-container .btn{
+    width: 100%;
+}
+
+
+.social-icon{
+    transition: all .3s ease;
+    cursor: pointer;
+    
+    &:hover{
+        
+    }
+    
+    &:not(:last-child){
+        
+        border-bottom: 1px solid #dcdcdc;
+        padding: 0 1rem;
+        
+    }
+    
+    & a{
+        color: $primaryDark;
+        font-size: 2rem;
+        line-height: 2;
+    }
+    
+}
+
+
+.float-social {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    background: #f1f1f1;
+    z-index: 999;
+    display: flex;
+    text-align: center;
+    box-shadow: 0px 2px 9px #00000038;
+}
+
+.backToTop {
+    position: fixed;
+    z-index: 1000;
+    bottom: 4rem;
+    right: 4rem;
+    padding: 1rem;
+    color: #ffffff;
+    transition: all .3s ease;
+    font-size: 2.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    background: $primaryLight;
+    box-shadow: 0px 4px 12px #0000003d;
+    opacity: 0;
+    
+    a{
+        color: #fff;
+    }
+    
+    &:hover{
+            transform: rotate(-10deg);
+    box-shadow: 0px 4px 12px #0000003d;
+    }
+    
+    &--show{
+        opacity: 1;
+    }
+}
+
+
+
+

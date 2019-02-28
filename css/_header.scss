@@ -1,0 +1,125 @@
+@import "variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Poppins:200|Rubik:300');
+
+
+.sticky-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.logo{
+    max-width: 10rem;
+    
+    & img{
+        width: 100%;
+    }
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    
+    a{
+        text-transform: uppercase;
+        font-family: $p-font;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: $fontColor;
+        letter-spacing: 1px;
+        
+        &::after{
+            content: "";
+            height: 3px;
+            width: 100%;
+            background-color: $primaryLight;
+            transform: scale(0);
+            margin-top: 0.7rem;
+            display: block;
+            transition: all .3s ease;
+        }
+        &:hover::after{
+            transform: scale(1);
+        }
+    }
+    
+}
+
+header{
+    overflow: hidden;
+    position: relative;
+    padding: 30rem 0;
+    z-index: 0;
+    
+    .video-overlay{
+        position: absolute;
+        z-index: 2;
+        background: #00000087;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .brand-stamp{
+        color: #fff;
+        position: relative;
+        z-index: 3;
+        
+        h3{
+            font-family: $title-font;
+            font-size: 7rem;
+            font-weight: 100;
+        }
+        h4{
+            font-family: $p-font;
+            font-size: 2.5rem;
+            font-weight: 100;
+            letter-spacing: 8px;
+            margin: 2rem 0;
+        }
+    }
+    
+    video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        z-index: 1;
+    }
+    
+    
+
+}
+
+.burger-menu{
+    display: none;
+    width: 23px;
+    cursor: pointer;
+    
+    .burger-line{
+        height: 3px;
+        width: 100%;
+        background-color: $fontColor;
+        margin: 4px 0;
+    }
+}
+
+
+
+.fix-nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: 2;
+}
+
+
+

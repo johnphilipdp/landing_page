@@ -1,0 +1,35 @@
+
+@import "layout.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "form.scss";
+@import "textstyling.scss";
+@import "variables.scss";
+@import "button.scss";
+@import "mediaquery.scss";
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+
+/*
+
+font-family: 'Poppins', sans-serif;
+font-family: 'Rubik', sans-serif;
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 10px;    
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+

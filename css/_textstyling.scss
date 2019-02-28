@@ -1,0 +1,62 @@
+@import "variables.scss";
+
+
+
+.title{
+    font-family: $title-font;
+    font-size: 3.5rem;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+}
+
+.list-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $primaryDark;
+}
+
+p, ul, li{
+    font-family: $p-font;
+    color: $fontColor;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.form-container, input[type="text"], select{
+    font-family: $p-font;
+}
+
+div#upOptLEA, #privacy{
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+}
+
+#privacy a{
+    color: $primaryLight;
+}
+
+.option-title{
+    background: #c7c7c7;
+}
+
+
+.third-section h4{
+    color: #fff;
+}
+
+
+.footer-links a {
+    font-size: 1.5rem;
+    font-family: $p-font;
+    text-decoration: underline;
+ 
+    
+    &:not(:last-child):after{
+        
+        content: "|";
+        margin: 0 1rem;
+        
+    }
+    
+}
